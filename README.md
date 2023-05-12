@@ -1,7 +1,18 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Hy-Block
+
+## How to run
+1. npm install
+2. npm run dev
 
 ## Reference
-| 제목 | 링크 | 
+### Docs
+| title | url | 
+|:---:|:---:|
+| `Next.js docs` | https://nextjs.org/docs |
+| `Material UI docs` | https://mui.com/material-ui/getting-started/overview/ |
+
+### Git
+| title | url | 
 |:---:|:---:|
 | `Conventional Commits` | https://www.conventionalcommits.org/en/v1.0.0/#summary |
 | `Git Flow` | https://nvie.com/posts/a-successful-git-branching-model/ |
