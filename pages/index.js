@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import SideBar from '../components/sideBar';
+import {Sidebar} from '../components/sidebar/sidebar';
 
 export default function Home() {
   return (
@@ -11,12 +11,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <SideBar />
+        <Sidebar />
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
 
@@ -48,7 +48,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer>
@@ -64,11 +64,12 @@ export default function Home() {
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          width: 100%;
+          padding: 0;
           flex: 1;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
+          justify-content: space-between;
           align-items: center;
         }
         footer {
