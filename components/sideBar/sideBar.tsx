@@ -1,5 +1,5 @@
 import { Tabs, Tab, ThemeProvider, Box } from "@mui/material";
-import { sidebarStyles, sidebarTheme } from "./sidebarStyle.css";
+import { sidebarStyles, sidebarTheme } from "./sidebar.css";
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
