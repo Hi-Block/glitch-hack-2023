@@ -1,17 +1,93 @@
 import { Box, Avatar } from "@mui/material";
-import { profileStyles } from "./profile.css";
 import SearchIcon from '@mui/icons-material/Search';
 import { deepPurple } from "@mui/material/colors";
 
 export const Profile = function Profile(props) {
-    const classes = profileStyles(props);
     return (
-        <div className={classes.profileBar}>
-            <Box><SearchIcon className={classes.svg} /></Box>
-            <Box className={classes.balance}><div><embed className={classes.svg} src="https://www.cryptologos.cc/logos/polygon-matic-logo.svg" /> </div><div id="matic" className={classes.balanceTxt}></div><div className={classes.balanceTxt}>MATIC</div></Box>
-            <Box className={classes.balance}><div><embed className={classes.svg} src="https://cryptologos.cc/logos/tether-usdt-logo.svg" / ></div><div id="usdt" className={classes.balanceTxt}></div><div className={classes.balanceTxt}>USDT</div></Box>
-            <Box><Avatar className={classes.avatar} sx={{ bgcolor:deepPurple[500], }}>HY</Avatar></Box>
-        </div>
+        <Box
+            sx={{
+                display:"flex",
+                flexDirection: "row-reverse",
+            }}
+        >
+            <Box 
+                sx={{
+                    margin: "1rem 1rem 0 0",
+                    // width: "30vh",
+                    height: "34px",
+                    display:"flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                }}
+            >
+            <Box>
+                <SearchIcon 
+                    sx={{
+                        margin: "0 1rem",
+                        height: "34px",
+                        width: "34px",
+                        color: "#1c1d2278",
+                    }}
+                />
+            </Box>
+            <Box sx={{
+                margin: "0 1rem",
+                display:"flex",
+                flexDirection: "row",
+            }}>
+            <div>
+                <embed style={{
+                    margin: "0 1rem",
+                    height: "34px",
+                    width: "34px",
+                    color: "#1c1d2278",
+                }} src="https://www.cryptologos.cc/logos/polygon-matic-logo.svg" />
+            </div>
+            <div id="matic" style={{
+                height: "34px",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                color: "#1c1d2278",
+                textAlign: "center",}}>
+            </div>
+            <div style={{
+                height: "34px",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                color: "#1c1d2278",
+                textAlign: "center",}}>MATIC</div></Box>
+            <Box sx={{
+                    margin: "0 1rem",
+                    display:"flex",
+                    flexDirection: "row",
+                }}>
+                <div><embed style={{
+                    margin: "0 1rem",
+                    height: "34px",
+                    width: "34px",
+                    color: "#1c1d2278",
+                }} src="https://cryptologos.cc/logos/tether-usdt-logo.svg" / ></div>
+                <div id="usdt" style={{height: "34px",
+                    fontSize: "1.2rem",
+                    fontWeight: "bold",
+                    color: "#1c1d2278",
+                    textAlign: "center",}}></div>
+                <div style={{height: "34px",
+                    fontSize: "1.2rem",
+                    fontWeight: "bold",
+                    color: "#1c1d2278",
+                    textAlign: "center",}}>USDT</div>
+            </Box>
+                <Box>
+                    <Avatar sx={{
+                        margin: "0 1rem",
+                        height: "34px",
+                        width: "34px",
+                        bgcolor:deepPurple[500],
+                    }} >HY</Avatar>
+                </Box>
+            </Box>
+        </Box>
     )
 };
 
