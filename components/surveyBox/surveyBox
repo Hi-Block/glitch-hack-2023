@@ -1,0 +1,29 @@
+import React from "react";
+import styles from "../styles/bigBox.module.css";
+import LongBox from "./surveyLine";
+
+const BigBox = () => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h2 className={styles.title}>Big Box Title</h2>
+        <div className={styles.icons}>
+          <span className={styles.icon}>Icon 1</span>
+          <span className={styles.icon}>Icon 2</span>
+        </div>
+      </div>
+      <hr className={styles.line} />
+      <div className={styles.items}>
+        <div className={styles.item}>Item 1</div>
+        <div className={styles.item}>Item 2</div>
+        <div className={styles.item}>Item 3</div>
+        {/* 추가적인 항목들 */}
+      </div>
+      <div className={styles.boxes}>
+        <LongBox />
+      </div>
+    </div>
+  );
+};
+
+export default BigBox;
