@@ -1,0 +1,62 @@
+
+/* navbar.module.css */
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  position: absolute;
+  width: 100%;
+  max-width: 1680px;
+  height: 40px;
+  left: 0;
+  top: 61px;
+}
+
+.navTitle {
+  width: 200px;
+  height: 34px;
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #A47BEA;
+  flex: none;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex: none;
+}
+
+.navButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background: #8247E5;
+  color: white;
+  border-radius: 12px;
+  flex: none;
+}
