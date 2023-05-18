@@ -1,0 +1,126 @@
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 32px;
+
+    width: 338px;
+    height: 358px;
+
+    background: #ffffff;
+    border-radius: 12px;
+    margin-top: 200px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.modalHeader{
+    width: 230px;
+    height: 16px;
+
+    font-family: '210 Chungchunseodang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #8B8E97;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.closeButton{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 29px;
+
+    width: 252px;
+    height: 215px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.walletInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+
+    width: 100%;
+    height: 32px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.walletName{
+    width: 70%;
+    height: 32px;
+
+    font-family: '210 Chungchunseodang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+
+    letter-spacing: -0.04em;
+
+    color: #26292E;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.walletImage{
+    width: 10%;
+}
+.selectButton{
+    background-color: transparent;
+    border: none;
+    /* padding: 10px; */
+}
+.modalBottom{
+    width: 156px;
+    height: 15px;
+    /* background-color: #26292E; */
+    font-family: '210 Chungchunseodang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #8D9099;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    margin-left: 10%;
+}
