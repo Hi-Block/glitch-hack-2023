@@ -1,0 +1,60 @@
+.footer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 96px 165px 40px;
+    gap: 10px;
+
+    position: absolute;
+    width: 100%;
+    height: 206px;
+    left: 0px;
+    top: 950px;
+
+    /* Gray/2 */
+    background: #E7EAEE;
+    border-top: 1px solid #E7EAEE;
+}
+.logo{
+    /* position: absolute; */
+    height: 31px;
+    left: 162px;
+    margin-top: -50px;
+
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    /* or 100% */
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #A47BEA;
+
+}
+.detail{
+    width: 100%;
+    height: 30px;
+    /* Paragraph/M/Regular */
+
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
