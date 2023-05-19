@@ -1,10 +1,11 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 // import { FaTimes } from "react-icons/fa";
-import styles from "./navbar.module.css";
+import styles from "./NavBar.module.css";
 import ConnectStyles from "components/walletModal/Modal.module.css";
 import ModalContent from "../walletModal/modalContent";
-const NavBar = () => {
+
+export const NavBar = function navBar() {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const handleItemClick = (path) => {
@@ -81,5 +82,3 @@ const NavBar = () => {
     </div>
   );
 };
-
-export default NavBar;
