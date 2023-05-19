@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "./NavBar.module.css";
 import ConnectStyles from "components/walletModal/Modal.module.css";
 import ModalContent from "../walletModal/modalContent";
+import { ConnectWalletButton } from "../connectWalletButton/connectWalletButton";
 
 export const NavBar = function navBar() {
   const router = useRouter();
@@ -72,13 +73,14 @@ export const NavBar = function navBar() {
           </div>
         </div>
       )}
-      <div
+      <ConnectWalletButton />
+      {/* <div
         className={styles.navButton}
         onClick={handleConnectWallet}
         style={{ visibility: showModal ? "hidden" : "visible" }}
       >
         Connect Wallet
-      </div>
+      </div> */}
     </div>
   );
 };

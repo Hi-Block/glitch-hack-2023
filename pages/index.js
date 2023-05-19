@@ -4,6 +4,7 @@ import {Sidebar} from '../components/sidebar/sidebar';
 import {Profile} from '../components/profile/profile';
 import {NavBar} from '../components/navbar/navBar';
 import {Footer} from '../components/footer/footer';
+import { ConnectWalletButton } from '../components/connectWalletButton/connectWalletButton';
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavBar />
       <main>
         {/* <Sidebar /> */}
         {/* <Profile /> */}
-        <NavBar />
+        <ConnectWalletButton />
         {/* <Footer /> */}
         {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -76,6 +78,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           // justify-content: space-between;
+          justify-content: center;
           // align-items: center;
           align-items: flex-start;
         }
