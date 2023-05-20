@@ -21,15 +21,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar />
+      <NavBar currentPage={currentPage} />
       <main>
         {/* <Sidebar /> */}
         {/* <Profile /> */}
-        <NavBar
+        {/* <NavBar
           // items={navItems}
           currentPage={currentPage}
           // onItemClick={handleItemClick}
-        />
+        /> */}
         {/* <Footer /> */}
         {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
