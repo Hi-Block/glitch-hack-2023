@@ -1,12 +1,11 @@
 .container {
+  margin: 2rem 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
   background: #FFFFFF;
-  
-  position: absolute;
   width: 80%; 
   height: 80%;
   left: 162px;
@@ -14,13 +13,14 @@
 }
 
 .titleBox {
+  margin: 1rem 2rem 0 2rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   /* padding: 2px; */
   gap: 12px;
-  width: 100%; 
+  width: 90%; 
   height: 45px;
   flex: none;
   order: 0;
@@ -54,9 +54,10 @@
 }
 
 .explanation{
-  position: absolute;
+  margin: 0rem 2rem 1rem 2rem;
+  padding: 0 0 2rem 0;
   width: 90%;
-  height: 70px;
+  height: 100px;
   left: 24px;
   top: 10%;
 
@@ -66,11 +67,12 @@
   font-size: 18px;
   line-height: 100%;
 /* or 18px */
-  color: rgba(28, 29, 34, 0.5); 
-  border-bottom: solid 3px #E7EAEE;
+  color: rgba(28, 29, 34, 0.7); 
+  border-bottom: solid 2px #E7EAEE;
 }
 
 .list{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,8 +81,8 @@
     gap: 24px;
 
     width: 100%;
-    height: 75%;
-    margin-top: 8%;
+    /* height: 75%; */
+    /* margin-top: 8%; */
 
     border-radius: 12px;
 }
@@ -128,11 +130,11 @@
 }
 
 .boxLine{
-
+  margin-left: 14rem;
   width: 100%;
   height: 60px;
-  top: 30%;
-  left:20%;
+  /* top: 30%;
+  left:20%; */
   /* background-color: aqua; */
 } 
 .completeButton{
@@ -141,7 +143,7 @@
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    gap: 24px;
+    /* gap: 24px; */
 
     width: 143px;
     height: 30px;

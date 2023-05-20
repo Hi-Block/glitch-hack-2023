@@ -1,14 +1,25 @@
-// import Head from "next/head";
+import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import { NavBar } from "../components/navBar/navBar";
 import { Footer } from "../components/footer/footer";
 import { SurveyBox } from "../components/surveyBox/surveyBox";
+import { Box } from "@mui/material";
+import { ConnectWalletButton } from "../components/connectWalletButton/connectWalletButton";
+import StatisticBox from '../components/statisticBox/statisticBox';
+import SurveyRow from '../components/surveyRow.tsx/SurveyRow';
+import CircularStatic from '../components/circularProgressWithLabel/CircularProgressWithLabel';
+import SearchIcon from '@mui/icons-material/Search';
+import FilterListIcon from '@mui/icons-material/FilterList';
 
 export default function Home() {
   const currentPage = "Ongoing";
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Survey</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NavBar currentPage={currentPage} />
       <main>
         <SurveyBox />
