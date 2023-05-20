@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
         <Head>
-        <title>Connect Wallet</title>
+        <title>Status Page</title>
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <NavBar currentPage={currentPage} />

@@ -3,7 +3,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CircularStatic from "../circularProgressWithLabel/CircularProgressWithLabel"
 
 export default function SurveyRow(props : surveyRowProps) {
-    let dayClose = (props.endDate).indexOf("D") < 0 ? true : false;
+    let dayClose = ((((props.endDate).indexOf("D")) < 0) && ((props.endDate).indexOf("Left")>-1)) ? true : false;
     let words = (props.progress).split("/");
     let progressLimitClose = 0;
     if((parseInt(words[0]))/(parseInt(words[1])) >= 0.8) {

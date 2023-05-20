@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
         <Head>
-        <title>Ongoing Survey</title>
+        <title>Completed Survey</title>
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <NavBar currentPage={currentPage} />
@@ -54,11 +54,11 @@ export default function Home() {
                         <FilterListIcon sx={{margin: "0 1rem",}} />
                     </Box>
                 </Box>
-                <SurveyRow cat={'th'} name={'2030 Smartphone Preference'} prerequisite={'Age: 20-30'} endDate={'10D 23H Left'} reward={'0.04'} progress={"4830/5000"} arrow={true} />
-                <SurveyRow cat={'td'} name={'2030 Smartphone Preference'} prerequisite={'Age: 20-30'} endDate={'10D 23H Left'} reward={'0.04'} progress={"4830/5000"} arrow={true} />
-                <SurveyRow cat={'td'} name={'Glitch Hackathon Feedback Survey'} prerequisite={'POAP: Glitch'} endDate={'8H Left'} reward={'0.12'} progress={"31/200"} arrow={true} />
-                <SurveyRow cat={'td'} name={'Korean Instant Noodle Survey'} prerequisite={'Nat.: Korea'} endDate={'23D 17H Left'} reward={'0.05'} progress={"3234/5000"} arrow={true} />
-                <SurveyRow cat={'td'} name={'3040 Transportation Preference'} prerequisite={'Age: 30-40'} endDate={'31D 1H Left'} reward={'0.04'} progress={"137/500"} arrow={true} />
+                <SurveyRow cat={'th'} name={'2030 Smartphone Preference'} prerequisite={'Age: 20-30'} endDate={'23/05/21'} reward={'0.04'} progress={"4830/5000"} arrow={true} />
+                <SurveyRow cat={'td'} name={'2030 Smartphone Preference'} prerequisite={'Age: 20-30'} endDate={'23/05/20'} reward={'0.04'} progress={"5000/5000"} arrow={true} />
+                <SurveyRow cat={'td'} name={'Glitch Hackathon Feedback Survey'} prerequisite={'POAP: Glitch'} endDate={'23/05/18'} reward={'0.12'} progress={"200/200"} arrow={true} />
+                <SurveyRow cat={'td'} name={'Trip Survey'} prerequisite={'Nat.: Korea'} endDate={'22/05/10'} reward={'0.05'} progress={"5000/5000"} arrow={true} />
+                <SurveyRow cat={'td'} name={'3040 Hobby Preference'} prerequisite={'Age: 30-40'} endDate={'22/10/05'} reward={'0.04'} progress={"500/500"} arrow={true} />
                 <Box sx={{ marginTop: "30px", width: "100px", height:"30px", borderRadius:"20px", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color:"#6234af90", backgroundColor:"#8247e530"}}>More</Box>
             </Box>
         </main>
