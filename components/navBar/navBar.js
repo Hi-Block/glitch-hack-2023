@@ -21,7 +21,7 @@ export const NavBar = function navBar({ currentPage }) {
 
   return (
     <div className={styles.navBar}>
-      <div className={styles.navTitle}>Surveyer</div>
+      <div className={styles.navTitle}>30FY</div>
       <div className={styles.navMenu}>
         <div
           className={
