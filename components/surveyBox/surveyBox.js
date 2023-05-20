@@ -9,15 +9,13 @@ export const SurveyBox = function surveyBox() {
   return (
     <div className={styles.container}>
       <div className={styles.titleBox}>
-        <h2 className={styles.title}>Completed Survey</h2>
+        <h2 className={styles.title}>2030 Smartphone Preference</h2>
         <button className={styles.closeButton}>
           <img src="Close.png" alt="Close Icon" />
         </button>
       </div>
       <div className={styles.explanation}>
-        This survey is operated by Samsung Electronics in order to question
-        young smartphone users about brand preference This data will be used to
-        enhance upcoming Galaxy smartphone and its brand to new users.
+      This survey is operated by Samsung Electronics in order to question young smartphone users about the brand preferences.<br />This data will be used to enhance the quality of upcoming Galaxy smartphone and its brand to new users.<br />Survey will be conducted approximately for 5-7 minutes, consists of 3 short answering questions & 9 checkbox questions.
       </div>
 
       <div className={styles.list}>
@@ -29,7 +27,7 @@ export const SurveyBox = function surveyBox() {
             </div>
           </Box>
           <div className={styles.boxLine}>
-            <Box sx={{ display: "flex", gap: "13%" }}>
+            <Box sx={{ display: "flex", /*gap: "13%"*/ }}>
               <FormControlLabel control={<Checkbox />} label="Galaxy" />
               <FormControlLabel control={<Checkbox />} label="iPhone" />
               <FormControlLabel control={<Checkbox />} label="Xiaomi" />
@@ -62,7 +60,7 @@ export const SurveyBox = function surveyBox() {
             <TextField id="filled-basic" label="Type Answer" variant="filled" />
           </div>
         </div>
-        <button className={styles.closeButton}>Complete Servey</button>
+        <Box sx={{ marginTop: "0px", width: "180px", height:"36px", borderRadius:"20px", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color:"#FFFFFF", backgroundColor:"#8247e590"}}>Complete Survey</Box>
       </div>
     </div>
   );
