@@ -5,6 +5,10 @@ import { Footer } from '../components/footer/footer';
 import { Box } from "@mui/material";
 import { ConnectWalletButton } from "../components/connectWalletButton/connectWalletButton";
 import StatisticBox from '../components/statisticBox/statisticBox';
+import SurveyRow from '../components/surveyRow.tsx/SurveyRow';
+import CircularStatic from '../components/circularProgressWithLabel/CircularProgressWithLabel';
+import SearchIcon from '@mui/icons-material/Search';
+import FilterListIcon from '@mui/icons-material/FilterList';
 
 export default function Home() {
   return (
@@ -16,52 +20,93 @@ export default function Home() {
         <NavBar />
         <main>
             <Box sx={{
-                margin: "1rem 0 1rem 0.5rem",
-                fontSize: "1.5rem",
-                fontFamily: "Kanit",
-                fontWeight: "600",
+                width: "100%",
+                margin: "0 0 2rem 0",
             }}>
-                Statistic
+                <Box sx={{
+                    margin: "1rem 0 1rem 0.5rem",
+                    fontSize: "1.5rem",
+                    fontFamily: "Kanit",
+                    fontWeight: "600",
+                }}>
+                    Statistic
+                </Box>
+                <Box sx={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                }}>
+                    <StatisticBox cat={'Participated'} cnt={100} val={200} />
+                    <StatisticBox cat={'Uploaded'} cnt={100} val={200} />
+                    <StatisticBox cat={'Data Market'} cnt={100} val={200} />
+                </Box>
             </Box>
             <Box sx={{
                 width: "100%",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-            }}>
-                <StatisticBox cat={'Participated'} cnt={100} val={200} />
-                <StatisticBox cat={'Uploaded'} cnt={100} val={200} />
-                <StatisticBox cat={'Data Market'} cnt={100} val={200} />
-            </Box>
-            {/* <Box sx={{
-                width: "100%",
-                display: "flex",
-                textAlign: "center",
-                flexDirection: "column",
-                alignItems: "center",
-                // justifyContent: "center",
+                margin: "2rem 0",
             }}>
                 <Box sx={{
-                    marginBottom: "2rem",
-                    // width: "90px",
-                    // height: "calc(100vh - 100px)",
-                    color: "#1C1D22",
-                    opacity: "0.5",
-                    // display:"flex",
-                    // flexDirection: "column",
-                    // justifyContent: "space-between",
-                    fontFamily: "Exo2",
+                    width: "100%",
+                    margin: "1rem 0 1rem 0.5rem",
+                    fontSize: "1.5rem",
+                    fontFamily: "Kanit",
                     fontWeight: "600",
-                    fontSize: "36px",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
                 }}>
-                    <div>
-
-                        Connect wallet to see this page
-                    </div>
+                    <span>Participated Survey</span>
+                    <Box sx={{
+                        padding: "0 2rem",
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "flex-end",
+                        alignItems: "center",
+                        // color: "#8247E5",
+                        opacity: "0.5",
+                    }}>
+                        <SearchIcon sx={{margin: "0 1rem",}} />
+                        <FilterListIcon sx={{margin: "0 1rem",}} />
+                    </Box>
                 </Box>
-                <ConnectWalletButton /> */}
-            {/* </Box> */}
+                <SurveyRow cat={'th'} name={'설문조사입니다'} prerequisite={'prerequisite'} endDate={'2023.05.05'} reward={'3'} progress={40} arrow={true} />
+                <SurveyRow cat={'td'} name={'설문조사입니다'} prerequisite={'prerequisite'} endDate={'2023.05.05'} reward={'3'} progress={40} arrow={true} />
+            </Box>
+            <Box sx={{
+                width: "100%",
+                margin: "2rem 0",
+            }}>                
+                <Box sx={{
+                    width: "100%",
+                    margin: "1rem 0 1rem 0.5rem",
+                    fontSize: "1.5rem",
+                    fontFamily: "Kanit",
+                    fontWeight: "600",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                }}>
+                    <span>Uploaded Survey</span>
+                    <Box sx={{
+                        padding: "0 2rem",
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "flex-end",
+                        alignItems: "center",
+                        // color: "#8247E5",
+                        opacity: "0.5",
+                    }}>
+                        <SearchIcon sx={{margin: "0 1rem",}} />
+                        <FilterListIcon sx={{margin: "0 1rem",}} />
+                    </Box>
+                </Box>
+                <SurveyRow cat={'th'} name={'설문조사입니다'} prerequisite={'prerequisite'} endDate={'2023.05.05'} reward={'3'} progress={40} arrow={true} />
+                <SurveyRow cat={'td'} name={'설문조사입니다'} prerequisite={'prerequisite'} endDate={'2023.05.05'} reward={'3'} progress={40} arrow={true} />
+            </Box>
         </main>
         <footer>
             <Footer />
