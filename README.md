@@ -1,6 +1,9 @@
-# Hy-Block
+# 30FY
+A Web3.0 survey platform powered by Polygon ID, creating decentralized economy & highest level of privacy.
 
-## How to run
+![KakaoTalk_20230520_205138861](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/50026817-5d6d-44a4-85ce-e417a668e344)
+
+## Implementation Guide
 1. npm install
 2. npm run dev
 
