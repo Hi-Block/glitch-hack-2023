@@ -1,0 +1,17 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    position: absolute;
+    width: 109px;
+    height: 30px;
+    left: 45%;
+    top: 887px;
+
+    background: rgba(130, 71, 229, 0.1);
+    border-radius: 17px;
+}

@@ -1,8 +1,19 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import SideBar from '../components/sideBar';
+import { useRouter } from "next/router";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import { NavBar } from "../components/navbar/navBar";
+import { Footer } from "../components/footer/footer";
 
 export default function Home() {
+  // const router = useRouter();
+  // const handleItemClick = (path) => {
+  //   router.push(path);
+  // };
+
+  // const navItems = [{ label: "Item 1" }, { label: "Item 2" }];
+
+  const currentPage = "Ongoing";
+
   return (
     <div className={styles.container}>
       <Head>
@@ -10,13 +21,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavBar />
       <main>
-        <SideBar />
-        <h1 className={styles.title}>
+        {/* <Sidebar /> */}
+        {/* <Profile /> */}
+        <NavBar
+          // items={navItems}
+          currentPage={currentPage}
+          // onItemClick={handleItemClick}
+        />
+        {/* <Footer /> */}
+        {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        </h1> */}
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
 
@@ -48,32 +67,35 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
-
       <footer>
-        <a
+        <Footer />
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+        </a> */}
       </footer>
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          width: 100%;
+          padding: 0;
           flex: 1;
           display: flex;
           flex-direction: column;
+          // justify-content: space-between;
           justify-content: center;
-          align-items: center;
+          // align-items: center;
+          align-items: flex-start;
         }
         footer {
           width: 100%;
-          height: 100px;
+          // height: 100px;
           border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
@@ -113,5 +135,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }

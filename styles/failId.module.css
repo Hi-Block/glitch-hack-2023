@@ -1,0 +1,46 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-box {
+    padding: 50px; 
+    width : 704;
+    height : 642;
+    border: 2px solid #898C8E;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.error-icon {
+    width : 160;
+    height : 160;
+}
+
+.error-message {
+  margin: 3px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.error-details{
+    padding: auto;
+    font-size: 15px;
+}
+
+.retry-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #8247E5;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #a6aac3;
+}
