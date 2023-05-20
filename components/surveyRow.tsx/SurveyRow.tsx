@@ -11,7 +11,7 @@ export default function SurveyRow(props : surveyRowProps) {
                 <Box sx={{width: "20%"}}>Prerequisite</Box>
                 <Box sx={{width: "15%"}}>End Date</Box>
                 <Box sx={{width: "15%"}}>Reward Amount</Box>
-                <Box sx={{width: "15%", color: "red"}}>Progress</Box>
+                <Box sx={{width: "15%"}}>Progress</Box>
                 <Box sx={{width: "5%", color: "#8247E5"}}>&nbsp;</Box>
             </Box>
         )
