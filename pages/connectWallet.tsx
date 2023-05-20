@@ -1,18 +1,20 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { NavBar } from '../components/navbar/navBar';
+import { NavBar } from '../components/navBar/navBar';
 import { Footer } from '../components/footer/footer';
 import { Box } from "@mui/material";
 import { ConnectWalletButton } from "../components/connectWalletButton/connectWalletButton";
 
 export default function Home() {
+    const currentPage = "Status";
+
   return (
     <div className={styles.container}>
         <Head>
         <title>Connect Wallet</title>
         <link rel="icon" href="/favicon.ico" />
         </Head>
-        <NavBar />
+        <NavBar currentPage={currentPage} />
         <main>
             <Box sx={{
                 width: "100%",

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { NavBar } from '../components/navbar/navBar';
+import { NavBar } from '../components/navBar/navBar';
 import { Footer } from '../components/footer/footer';
 import { Box } from "@mui/material";
 import { ConnectWalletButton } from "../components/connectWalletButton/connectWalletButton";
