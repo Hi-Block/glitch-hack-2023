@@ -1,0 +1,63 @@
+import { ethers, BigNumber } from 'ethers'
+import { JsonRpcProvider } from '@ethersproject/providers'
+import { assert } from 'chai'
+
+
+const Web3 = require('web3')
+
+export const ZeroAddress = '0x' + '0'.repeat(40)
+export const DeadAddress = '0x000000000000000000000000000000000000dEaD'
+export const MaxUINT = '115792089237316195423570985008687907853269984665640564039457584007913129639935'
+export const ZERO = BigNumber.from(0)
+export const UNIT = BigNumber.from('1' + '0'.repeat(18))
+export const gwei = 10 ** -9
+export const GAS_LIMIT = 5000000
+export const GAS_ESTIMATE = GAS_LIMIT * 15 / gwei
+
+const URL = {
+    bsc_rpc: 'https://bsc-dataseed.binance.org',
+    idc_server_2_bsc: 'http://115.68.165.101:8545',
+    idc_server_2_bsc_ws: 'ws://115.68.165.101:8546',
+    
+    mound_server_klaytn: 'http://175.209.78.135:8551'
+}
+
+const TokensBSC = {
+    BNB: ZeroAddress,
+    WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    BUNNY: '0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51',
+    CAKE: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    BUSD: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+    USDT: '0x55d398326f99059fF775485246999027B3197955',
+    VAI: '0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7',
+    BTCB: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
+    ETH: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+    XVS: '0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63',
+    AUTO: '0xa184088a740c695e156f91f5cc086a06bb78b827',
+    BIFI: '0xCa3F508B8e4Dd382eE878A314789373D80A5190A',
+    QBT: '0x17B7163cf1Dbd286E262ddc68b553D899B93f526',
+    LEX: '0x6535B23C851cad75327137d89b1DdC53654801a3',
+    
+    USDT_BNB_V2: '0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE',
+    BUSD_BNB_V2: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+    BTCB_BNB_V2: '0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082',
+    BUNNY_BNB_V2: '0x5aFEf8567414F29f0f927A0F2787b188624c10E2',
+    XVS_BNB_V2: '0x7EB5D86FD78f3852a3e0e064f2842d45a3dB6EA2',
+    BIFI_BNB_V2: '0x3f1A9f3D9aaD8bD339eD4853F345d2eF89fbfE0c',
+    AUTO_BNB_V2: '0x5657cada6B6bbEF1DBd77aEDB1A6105cFAb4b836',
+    CAKE_BNB_V2: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+    ETH_BNB_V2: '0x74E4716E431f45807DCF19f284c7aA99F18a4fbc',
+    QBT_BNB_V2: '0x67EFeF66A55c4562144B9AcfCFbc62F9E4269b3e'
+}
+
+const Contracts = {
+    PancakeRouter02: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
+    Qore: '0xF70314eb9c7Fe7D88E6af5aa7F898b3A162dcd48',
+    qBNB: '0xbE1B5D17777565D67A5D2793f879aBF59Ae5D351',
+    qUSDT: '0x99309d2e7265528dC7C3067004cC4A90d37b7CC3',
+    PriceCalculatorBSC: '0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6'
+}
+
+export default {
+    URL, TokensBSC, Contracts
+}
