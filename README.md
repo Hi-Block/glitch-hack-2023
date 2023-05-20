@@ -17,7 +17,6 @@ Polygon ID is a solution to build trusted and secure relationships between users
 
 The next major update will be implementing data marketplace, providing 30FY with new oppotunities for both ends. Data marketplace is the place where uploader can making most of their data by selling onto marketplace. Not only it would provide another option for the uploaders, but also it gives oppotunities for data engineers to obtain high quality data, proven by blockchain technology. Also small share of revenue will be returned to people who provided data, creating a new economy revolving around survey data.
 
-
 ## Tech Stack
 Front End : next.js , react, javascript
 
@@ -33,6 +32,25 @@ Design : Figma, Powerpoint
 
 ### Database Architecture
 <img width="855" alt="db_arch" src="https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/dc25282a-7156-4bef-bc54-d806b94bf0d0">
+
+### Pages
+![30(1)](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/9387f5d7-4f7d-42a6-a5c8-3129c6479a80)
+Ongoing menu
+
+![30(2)](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/63488bab-d21f-48d3-964c-782b9a56bc0e)
+Survey Detail
+
+![30(3)](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/74c6586c-962a-48c1-a305-e95b4a7eb924)
+Generate proof check QR Code
+
+![30(4)](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/4359be29-5a7f-4072-a9cb-8988de46160e)
+Polygon ID Wallet - generates proof on Mobile
+
+![30(5)](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/79d9fb26-60d9-48fb-b510-00aaa7ad7ad5)
+Participate on survey (Get Reward)
+
+![30(6)](https://github.com/Hi-Block/glitch-hack-2023/assets/86182583/b5cc55c3-b129-429a-9415-36869542cd8a)
+Dashboard
 
 ## Deployed Contract
 
