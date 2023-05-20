@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { NavBar } from "../components/navBar/navBar";
+import { NavBar } from "../components/navbar/navBar";
 import { Footer } from "../components/footer/footer";
 
 export default function Home() {

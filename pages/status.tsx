@@ -11,13 +11,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import FilterListIcon from '@mui/icons-material/FilterList';
 
 export default function Home() {
+    const currentPage = "Status";
+
   return (
     <div className={styles.container}>
         <Head>
         <title>Connect Wallet</title>
         <link rel="icon" href="/favicon.ico" />
         </Head>
-        <NavBar />
+        <NavBar currentPage={currentPage} />
         <main>
             <Box sx={{
                 width: "100%",
