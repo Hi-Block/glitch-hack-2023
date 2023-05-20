@@ -1,12 +1,11 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-// import { FaTimes } from "react-icons/fa";
+import React from "react";
 import styles from "./NavBar.module.css";
-import ConnectStyles from "components/walletModal/Modal.module.css";
-import ModalContent from "../walletModal/modalContent";
+import ConnectStyles from "/components/walletModal/Modal.module.css";
 import { ConnectWalletButton } from "../connectWalletButton/connectWalletButton";
 
-export const NavBar = function navBar() {
+export const NavBar = function navBar({ currentPage }) {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const handleItemClick = (path) => {
@@ -19,36 +18,47 @@ export const NavBar = function navBar() {
   const handleModalClose = () => {
     setShowModal(false); // 모달을 닫을 때 모달 표시 상태를 false로 변경
   };
+
   return (
     <div className={styles.navBar}>
       <div className={styles.navTitle}>Surveyer</div>
       <div className={styles.navMenu}>
         <div
-          className={styles.navItem}
-          onClick={() => handleItemClick("/page1")}
+          className={
+            "Ongoing" === currentPage ? styles.activeItem : styles.navItem
+          }
+          onClick={() => handleItemClick("/")}
         >
           Ongoing
         </div>
         <div
-          className={styles.navItem}
-          onClick={() => handleItemClick("/page2")}
+          className={
+            "Complete" === currentPage ? styles.activeItem : styles.navItem
+          }
+          onClick={() => handleItemClick("/complete")}
         >
           Complete
         </div>
         <div
-          className={styles.navItem}
+          className={
+            "Status" === currentPage ? styles.activeItem : styles.navItem
+          }
           onClick={() => handleItemClick("/page3")}
         >
           Status
         </div>
         <div
-          className={styles.navItem}
+          className={
+            "Upload" === currentPage ? styles.activeItem : styles.navItem
+          }
           onClick={() => handleItemClick("/page3")}
         >
           Upload
         </div>
         <div
-          className={styles.navItem}
+          className={
+            "Help" === currentPage ? styles.activeItem : styles.navItem
+          }
           onClick={() => handleItemClick("/page3")}
         >
           Help
@@ -66,7 +76,6 @@ export const NavBar = function navBar() {
                 <img src="close.png" alt="Close" />
               </button>
             </div>
-            <ModalContent />
             <div className={ConnectStyles.modalBottom}>
               View QR code instead
             </div>

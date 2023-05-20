@@ -1,12 +1,19 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import {Sidebar} from '../components/sidebar/sidebar';
-import {Profile} from '../components/profile/profile';
-import {NavBar} from '../components/navbar/navBar';
-import {Footer} from '../components/footer/footer';
-import { ConnectWalletButton } from '../components/connectWalletButton/connectWalletButton';
+import { useRouter } from "next/router";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import { NavBar } from "../components/navBar/navBar";
+import { Footer } from "../components/footer/footer";
 
 export default function Home() {
+  // const router = useRouter();
+  // const handleItemClick = (path) => {
+  //   router.push(path);
+  // };
+
+  // const navItems = [{ label: "Item 1" }, { label: "Item 2" }];
+
+  const currentPage = "Ongoing";
+
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +25,11 @@ export default function Home() {
       <main>
         {/* <Sidebar /> */}
         {/* <Profile /> */}
-        <ConnectWalletButton />
+        <NavBar
+          // items={navItems}
+          currentPage={currentPage}
+          // onItemClick={handleItemClick}
+        />
         {/* <Footer /> */}
         {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -124,5 +135,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }

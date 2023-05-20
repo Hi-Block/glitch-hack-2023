@@ -1,49 +1,7 @@
 // import React from "react";
 import styles from "./SurveyBox.module.css";
 
-// const SurveyBox = () => {
-//   return (
-//     <div className={styles.container}>
-//       <div className={styles.titleBox}>
-//         <h2 className={styles.title}>Completed Survey</h2>
-//         <img
-//           className={styles.titleSearch}
-//           src="Search.png"
-//           alt="Search Icon"
-//         />
-//         <img
-//           className={styles.titleFilter}
-//           src="Filter list.png"
-//           alt="Filter Icon"
-//         />
-//       </div>
-//       <table className={styles.list}>
-//         <tr className={styles.header}>
-//           <th>Survey Name</th>
-//           <th>Prerequisites</th>
-//           <th>End Date</th>
-//           <th>Reward Amount</th>
-//           <th>Progress</th>
-//           <th>Action</th>
-//         </tr>
-//         <tr className={styles.line}>
-//           <td>데이터1</td>
-//           <td>데이터2</td>
-//           <td>데이터3</td>
-//           <td>데이터2</td>
-//           <td>데이터3</td>
-//           <td>
-//             <button>hi</button>
-//           </td>
-//         </tr>
-//       </table>
-//     </div>
-//   );
-// };
-
-// export default SurveyBox;
-
-const SurveyBox = () => {
+export const SurveyBox = function surveyBox() {
   // 가상의 Survey 데이터 예시
   const surveyData = [
     {
@@ -80,9 +38,9 @@ const SurveyBox = () => {
       </div>
       <table className={styles.list}>
         <thead>
-          <tr className={styles.header}>
-            <th>Survey Name</th>
-            <th>Prerequisites</th>
+          <tr>
+            <th className={styles.surveyName}>Survey Name</th>
+            <th className={styles.surveyName}>Prerequisites</th>
             <th>End Date</th>
             <th>Reward Amount</th>
             <th>Progress</th>
@@ -107,5 +65,3 @@ const SurveyBox = () => {
     </div>
   );
 };
-
-export default SurveyBox;
