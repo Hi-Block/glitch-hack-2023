@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Modal.module.css";
 
-const ModalContent = () => {
+export const ModalContent = function modalContent() {
   return (
     <div className={styles.modalContent}>
       <div className={styles.walletInfo}>
@@ -35,5 +35,3 @@ const ModalContent = () => {
     </div>
   );
 };
-
-export default ModalContent;
